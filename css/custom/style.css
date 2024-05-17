@@ -7,10 +7,40 @@
   --yellow-color: #ffcf27;
   --hero-bg-color: #eef4f6;
   --sub-heading: 50px;
-
 }
 *,
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
+
+/* css added by deep */
+.primary-bg {
+  background-color: var(--primary-color);
+}
+.frame {
+  background-size: contain;
+}
+.py-28 {
+  padding: 7rem 0;
+}
+.subheading3{
+  font-size: 24px;
+}
+.fs-14{
+  font-size: 14px;
+}
+@media only screen and (max-width: 1200px) {
+ .subheading3{
+font-size: 20px;
+ }
+}
+
+@media only screen and (max-width: 992px) {
+  .subheading3{
+ font-size: 18px;
+  }
+  .fs-14{
+    font-size: 12px;
+  }
+ }
