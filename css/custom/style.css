@@ -59,11 +59,9 @@ body {
 /* Marquee section css ends */
 
 /* Cleansing Bar section css */
-.col-bg-img {
-  background-color: var(--hero-bg-color);
+.cleansing-bar .hero-bg {
+  /* background-color: var(--hero-bg-color); */
   height: 432px;
-  width: 100%;
-  border-radius: 270px 15px 0 270px;
 }
 
 .pricing-table-view {
