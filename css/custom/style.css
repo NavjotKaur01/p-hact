@@ -6,9 +6,14 @@
   --border-color: #b2dcde;
   --yellow-color: #ffcf27;
   --hero-bg-color: #eef4f6;
-  --soap-section-bg-color: #EAF2F4;
+  --soap-section-bg-color: #eaf2f4;
+  --light-bg: #f5f8fa;
+  --red-text: #de3032;
   --sub-heading: 50px;
+  --sub-heading2: 34px;
   --fs-14: 14px;
+  --fs-12: 12px;
+  --grey-color: #e0e0e0;
 }
 *,
 body {
@@ -50,7 +55,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.mw-800{
+.mw-800 {
   max-width: 800px;
 }
 @media only screen and (max-width: 1200px) {
@@ -95,6 +100,78 @@ body {
   }
 }
 /* deep css end */
+.primary-text {
+  color: var(--primary-color);
+}
+
+.red-text {
+  color: var(--red-text);
+}
+
+/* .primary-btn {
+  background-color: var(--primary-color);
+  height: 62px;
+  border: 0;
+  border-radius: 40px;
+  padding: 10px 30px;
+} */
+
+.fs-50 {
+  font-size: 50px;
+}
+
+/* Marquee section css */
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.content {
+  font-size: 48px;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+  gap: 60px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Marquee section css ends */
+
+/* Cleansing Bar section css */
+.cleansing-bar .hero-bg {
+  height: 550px;
+}
+
+.border-y {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.border-btm {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.gap-58 {
+  gap: 60px;
+}
+
+/* Cleansing Bar section css ends */
+
 .primary-bg {
   background: var(--primary-color) !important;
 }
@@ -105,6 +182,10 @@ body {
 
 .fs-14 {
   font-size: var(--fs-14);
+}
+
+.fs-12 {
+  font-size: var(--fs-12);
 }
 
 .primary-outline-btn {
@@ -128,7 +209,7 @@ body {
 
 .animate-text::before {
   content: "face";
-  animation: anime 6s linear 0s infinite forwards;
+  animation: anime 8s linear 0s infinite forwards;
   font-weight: 200;
   font-size: var(--sub-heading);
 }
@@ -138,35 +219,71 @@ body {
     content: "face";
     opacity: 1;
   }
-  12.5% {
+  10% {
     opacity: 0;
   }
-  25% {
+  20% {
     content: "body";
     opacity: 1;
   }
-  37.5% {
+  30% {
     opacity: 0;
   }
-  50% {
+  40% {
     content: "shave";
     opacity: 1;
   }
-  62.5% {
+  50% {
     opacity: 0;
   }
-  75% {
+  60% {
     content: "hair";
     opacity: 1;
   }
-  87.5% {
+  70% {
+    opacity: 0;
+  }
+  80% {
+    content: "hands";
+    opacity: 1;
+  }
+  90% {
     opacity: 0;
   }
 }
 
-.mw-1600 {
-  max-width: 1600px;
+.table > tr,
+th,
+td {
+  background: transparent !important;
+  color: var(--secondary-color) !important;
 }
+
+.table td {
+  padding: 44px 0 !important;
+}
+
+.table .th-logo {
+  width: 9vw;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.sub-heading2 {
+  font-size: var(--sub-heading2);
+}
+
+.grey-color {
+  background: var(--grey-color);
+}
+
+.soap-uses {
+  width: 210px;
+  height: 210px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 1400px) {
   .sub-heading {
@@ -177,6 +294,14 @@ body {
 @media only screen and (max-width: 1200px) {
   .sub-heading {
     font-size: 38px;
+  }
+
+  .table .th-logo {
+    width: 11vw;
+  }
+
+  .sub-heading2 {
+    font-size: 20px;
   }
 }
 
@@ -199,4 +324,64 @@ body {
   .sub-heading {
     font-size: 24px;
   }
+
+  .sub-heading2 {
+    font-size: 18px;
+  }
 }
+
+@media only screen and (max-width: 768px) {
+  .table td {
+    padding: 34px 0 !important;
+  }
+
+  .table h4 {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .table .th-logo {
+    width: 80px;
+  }
+
+  .recipe-section {
+    text-align: center;
+  }
+
+  .recipe-section > div {
+    padding-inline: 34px;
+  }
+
+  .recipe-section > div:first-child {
+    padding-inline: 0px;
+  }
+
+  .soap-uses {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* Reviews section */
+.light-bg {
+  background-color: var(--light-bg);
+}
+/* Reviews section ends*/
+
+/* Cart sidebar */
+#cart-view {
+  width: 590px;
+}
+
+.btn-close {
+  background-image: none;
+}
+
+.w-45 {
+  width: 45px;
+}
+.w-fit {
+  width: fit-content;
+}
+/* Cart sidebar */
