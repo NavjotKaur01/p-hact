@@ -21,11 +21,6 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
 }
-
-/* css added by deep */
-.primary-bg {
-  background-color: var(--primary-color);
-}
 .frame {
   background-size: contain;
 }
@@ -39,7 +34,7 @@ body {
   font-size: 14px;
 }
 .bg-lightblue {
-  background-color: #eef4f6;
+  background-color: var(--hero-bg-color) !important;
 }
 .two-soap-section {
   height: 580px;
@@ -65,9 +60,6 @@ body {
 .warning-bg {
   background-color: var(--yellow-color);
 }
-@media only screen and (max-width: 1200px) {
-}
-
 @media only screen and (max-width: 992px) {
   .subheading3 {
     font-size: 18px;
@@ -79,21 +71,12 @@ body {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 576px) {
-}
-/* deep css end */
-.primary-text {
-  color: var(--primary-color);
-}
-
 .red-text {
   color: var(--red-text);
 }
-
 .fs-50 {
   font-size: 50px;
 }
-
 /* Marquee section css */
 .marquee {
   position: relative;
@@ -102,11 +85,9 @@ body {
   height: 200px;
   overflow-x: hidden;
 }
-
 .content {
   font-size: 48px;
 }
-
 .track {
   position: absolute;
   white-space: nowrap;
@@ -114,7 +95,6 @@ body {
   animation: marquee 20s linear infinite;
   gap: 60px;
 }
-
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -123,71 +103,52 @@ body {
     transform: translateX(-50%);
   }
 }
-
 /* Marquee section css ends */
-
 /* Cleansing Bar section css */
 .cleansing-bar .hero-bg {
   height: 550px;
 }
-
 .border-y {
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
 }
-
 .border-btm {
   border-bottom: 1px solid var(--border-color);
 }
-
 .gap-58 {
   gap: 60px;
 }
-
 /* Cleansing Bar section css ends */
-
 .primary-bg {
   background: var(--primary-color) !important;
 }
-
 .primary-text {
   color: var(--primary-color) !important;
 }
-
-.fs-14 {
-  font-size: var(--fs-14);
-}
-
 .fs-12 {
   font-size: var(--fs-12);
 }
-
 .primary-outline-btn {
   border-color: var(--primary-color) !important;
   padding: 10px 35px;
 }
-
 .primary-btn {
   padding: 18px 35px;
 }
-
 .sub-heading {
   font-size: var(--sub-heading);
 }
-
 .hero-bg {
   background: var(--hero-bg-color);
   border-top-left-radius: 50rem;
   border-bottom-left-radius: 50rem;
 }
-
 .animate-text::before {
   content: "face";
   animation: anime 8s linear 0s infinite forwards;
   font-weight: 200;
   font-size: var(--sub-heading);
 }
-
 @keyframes anime {
   0% {
     content: "face";
@@ -225,63 +186,50 @@ body {
     opacity: 0;
   }
 }
-
 .table > tr,
 th,
 td {
   background: transparent !important;
   color: var(--secondary-color) !important;
 }
-
 .table td {
   padding: 44px 0 !important;
 }
-
 .table .th-logo {
   width: 9vw;
 }
-
 .w-fit {
   width: fit-content;
 }
-
 .sub-heading2 {
   font-size: var(--sub-heading2);
 }
-
 .grey-color {
   background: var(--grey-color);
 }
-
 .soap-uses {
   width: 210px;
   height: 210px;
 }
-
 .footer-input::placeholder {
   color: var(--primary-color);
 }
-
 .footer-heading {
   font-size: var(--sub-heading2);
 }
-
 /* Media Queries */
 @media only screen and (max-width: 1400px) {
   .sub-heading {
     font-size: 46px;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   .sub-heading {
     font-size: 38px;
   }
-
   .table .th-logo {
     width: 11vw;
   }
-
   .sub-heading2 {
     font-size: 20px;
   }
@@ -295,7 +243,6 @@ td {
     height: 350px;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .hero-bg {
     border-top-left-radius: 0;
@@ -307,15 +254,12 @@ td {
   .custom-text-center {
     text-align: center;
   }
-
   .custom-w-100 {
     width: 100%;
   }
-
   .sub-heading {
     font-size: 24px;
   }
-
   .sub-heading2 {
     font-size: 18px;
   }
@@ -328,7 +272,6 @@ td {
   .fs-14-custom {
     font-size: 14px;
   }
-
   .two-soap-pic {
     bottom: -70px;
   }
@@ -340,12 +283,10 @@ td {
     font-size: 24px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .table td {
     padding: 34px 0 !important;
   }
-
   .table h4 {
     font-size: 20px !important;
   }
@@ -353,24 +294,19 @@ td {
     width: 100% !important;
   }
 }
-
 @media only screen and (max-width: 576px) {
   .table .th-logo {
     width: 80px;
   }
-
   .recipe-section {
     text-align: center;
   }
-
   .recipe-section > div {
     padding-inline: 34px;
   }
-
   .recipe-section > div:first-child {
     padding-inline: 0px;
   }
-
   .soap-uses {
     width: 140px;
     height: 140px;
@@ -382,26 +318,19 @@ td {
     height: 250px;
   }
 }
-
 /* Reviews section */
 .light-bg {
   background-color: var(--light-bg);
 }
 /* Reviews section ends*/
-
 /* Cart sidebar */
 #cart-view {
   width: 590px;
 }
-
 .btn-close {
   background-image: none;
 }
-
 .w-45 {
   width: 45px;
-}
-.w-fit {
-  width: fit-content;
 }
 /* Cart sidebar */
