@@ -7,6 +7,7 @@
   --yellow-color: #ffcf27;
   --hero-bg-color: #eef4f6;
   --sub-heading: 50px;
+  --fs-14: 14px;
 }
 *,
 body {
@@ -44,3 +45,105 @@ font-size: 20px;
     font-size: 12px;
   }
  }
+.primary-bg {
+  background: var(--primary-color) !important;
+}
+
+.primary-text {
+  color: var(--primary-color) !important;
+}
+
+.fs-14 {
+  font-size: var(--fs-14);
+}
+
+.primary-outline-btn {
+  border-color: var(--primary-color) !important;
+  padding: 10px 35px;
+}
+
+.primary-btn {
+  padding: 18px 35px;
+}
+
+.sub-heading {
+  font-size: var(--sub-heading);
+}
+
+.hero-bg {
+  background: var(--hero-bg-color);
+  border-top-left-radius: 50rem;
+  border-bottom-left-radius: 50rem;
+}
+
+.animate-text::before {
+  content: "face";
+  animation: anime 6s linear 0s infinite forwards;
+  font-weight: 200;
+  font-size: var(--sub-heading);
+}
+
+@keyframes anime {
+  0% {
+    content: "face";
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 0;
+  }
+  25% {
+    content: "body";
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 0;
+  }
+  50% {
+    content: "shave";
+    opacity: 1;
+  }
+  62.5% {
+    opacity: 0;
+  }
+  75% {
+    content: "hair";
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 0;
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1400px) {
+  .sub-heading {
+    font-size: 46px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sub-heading {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hero-bg {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  nav {
+    background: var(--hero-bg-color);
+  }
+  .custom-text-center {
+    text-align: center;
+  }
+
+  .custom-w-100 {
+    width: 100%;
+  }
+
+  .sub-heading {
+    font-size: 24px;
+  }
+}
