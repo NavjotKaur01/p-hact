@@ -6,8 +6,11 @@
   --border-color: #b2dcde;
   --yellow-color: #ffcf27;
   --hero-bg-color: #eef4f6;
+  --light-bg: #f5f8fa;
+  --red-text: #de3032;
   --sub-heading: 50px;
   --fs-14: 14px;
+  --fs-12: 12px;
 }
 *,
 body {
@@ -19,13 +22,17 @@ body {
   color: var(--primary-color);
 }
 
-.primary-btn {
+.red-text {
+  color: var(--red-text);
+}
+
+/* .primary-btn {
   background-color: var(--primary-color);
   height: 62px;
   border: 0;
   border-radius: 40px;
   padding: 10px 30px;
-}
+} */
 
 .fs-50 {
   font-size: 50px;
@@ -68,8 +75,12 @@ body {
   height: 550px;
 }
 
-.pricing-table-view {
+.border-y {
   border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.border-btm {
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -89,6 +100,10 @@ body {
 
 .fs-14 {
   font-size: var(--fs-14);
+}
+
+.fs-12 {
+  font-size: var(--fs-12);
 }
 
 .primary-outline-btn {
@@ -210,7 +225,7 @@ td {
     padding: 34px 0 !important;
   }
 
-  .table h4   {
+  .table h4 {
     font-size: 20px !important;
   }
 }
@@ -220,3 +235,26 @@ td {
     width: 80px;
   }
 }
+
+/* Reviews section */
+.light-bg {
+  background-color: var(--light-bg);
+}
+/* Reviews section ends*/
+
+/* Cart sidebar */
+#cart-view {
+  width: 590px;
+}
+
+.btn-close {
+  background-image: none;
+}
+
+.w-45 {
+  width: 45px;
+}
+.w-fit {
+  width: fit-content;
+}
+/* Cart sidebar */
