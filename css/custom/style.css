@@ -14,6 +14,7 @@
   --fs-14: 14px;
   --fs-12: 12px;
   --grey-color: #e0e0e0;
+  --yellow-color: #ffcf27;
 }
 *,
 body {
@@ -58,46 +59,21 @@ body {
 .mw-800 {
   max-width: 800px;
 }
+.mw-1600 {
+  max-width: 1600px;
+}
+.warning-bg {
+  background-color: var(--yellow-color);
+}
 @media only screen and (max-width: 1200px) {
-  .subheading3 {
-    font-size: 20px;
-  }
-  .two-soap-section {
-    height: 430px;
-  }
-  .two-pack-soap {
-    height: 350px;
-  }
-  /* .two-soap-pic{
-  bottom: -110px;
- } */
+ 
 }
 
 @media only screen and (max-width: 992px) {
-  .subheading3 {
-    font-size: 18px;
-  }
-  .fs-14 {
-    font-size: 12px;
-  }
-  .fs-14-custom {
-    font-size: 14px;
-  }
 
-  .two-soap-pic {
-    bottom: -70px;
-  }
-  .two-pack-soap {
-    height: 300px;
-  }
 }
 @media only screen and (max-width: 576px) {
-  .two-soap-section {
-    height: 330px;
-  }
-  .two-pack-soap {
-    height: 200px;
-  }
+ 
 }
 /* deep css end */
 .primary-text {
@@ -107,14 +83,6 @@ body {
 .red-text {
   color: var(--red-text);
 }
-
-/* .primary-btn {
-  background-color: var(--primary-color);
-  height: 62px;
-  border: 0;
-  border-radius: 40px;
-  padding: 10px 30px;
-} */
 
 .fs-50 {
   font-size: 50px;
@@ -303,6 +271,15 @@ td {
   .sub-heading2 {
     font-size: 20px;
   }
+  .subheading3 {
+    font-size: 20px;
+  }
+  .two-soap-section {
+    height: 430px;
+  }
+  .two-pack-soap {
+    height: 350px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -328,6 +305,22 @@ td {
   .sub-heading2 {
     font-size: 18px;
   }
+  .subheading3 {
+    font-size: 18px;
+  }
+  .fs-14 {
+    font-size: 12px;
+  }
+  .fs-14-custom {
+    font-size: 14px;
+  }
+
+  .two-soap-pic {
+    bottom: -70px;
+  }
+  .two-pack-soap {
+    height: 300px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -337,6 +330,9 @@ td {
 
   .table h4 {
     font-size: 20px !important;
+  }
+  .w-50 {
+    width: 100% !important;
   }
 }
 
@@ -360,6 +356,12 @@ td {
   .soap-uses {
     width: 140px;
     height: 140px;
+  }
+  .two-soap-section {
+    height: 330px;
+  }
+  .two-pack-soap {
+    height: 250px;
   }
 }
 
