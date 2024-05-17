@@ -70,6 +70,15 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .subheading3 {
+    font-size: 18px;
+  }
+  .fs-14 {
+    font-size: 12px !important;
+  }
+  .fs-14-custom {
+    font-size: 14px;
+  }
 
 }
 @media only screen and (max-width: 576px) {
@@ -252,6 +261,14 @@ td {
   height: 210px;
 }
 
+.footer-input::placeholder {
+  color: var(--primary-color);
+}
+
+.footer-heading {
+  font-size: var(--sub-heading2);
+}
+
 /* Media Queries */
 @media only screen and (max-width: 1400px) {
   .sub-heading {
@@ -320,6 +337,9 @@ td {
   }
   .two-pack-soap {
     height: 300px;
+
+  .footer-heading{
+    font-size: 24px;
   }
 }
 
