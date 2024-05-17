@@ -9,8 +9,10 @@
   --light-bg: #f5f8fa;
   --red-text: #de3032;
   --sub-heading: 50px;
+  --sub-heading2: 34px;
   --fs-14: 14px;
   --fs-12: 12px;
+  --grey-color: #e0e0e0;
 }
 *,
 body {
@@ -127,7 +129,7 @@ body {
 
 .animate-text::before {
   content: "face";
-  animation: anime 6s linear 0s infinite forwards;
+  animation: anime 8s linear 0s infinite forwards;
   font-weight: 200;
   font-size: var(--sub-heading);
 }
@@ -137,28 +139,35 @@ body {
     content: "face";
     opacity: 1;
   }
-  12.5% {
+  10% {
     opacity: 0;
   }
-  25% {
+  20% {
     content: "body";
     opacity: 1;
   }
-  37.5% {
+  30% {
     opacity: 0;
   }
-  50% {
+  40% {
     content: "shave";
     opacity: 1;
   }
-  62.5% {
+  50% {
     opacity: 0;
   }
-  75% {
+  60% {
     content: "hair";
     opacity: 1;
   }
-  87.5% {
+  70% {
+    opacity: 0;
+  }
+  80% {
+    content: "hands";
+    opacity: 1;
+  }
+  90% {
     opacity: 0;
   }
 }
@@ -182,6 +191,19 @@ td {
   width: fit-content;
 }
 
+.sub-heading2 {
+  font-size: var(--sub-heading2);
+}
+
+.grey-color {
+  background: var(--grey-color);
+}
+
+.soap-uses {
+  width: 210px;
+  height: 210px;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 1400px) {
   .sub-heading {
@@ -196,6 +218,10 @@ td {
 
   .table .th-logo {
     width: 11vw;
+  }
+
+  .sub-heading2 {
+    font-size: 20px;
   }
 }
 
@@ -218,6 +244,10 @@ td {
   .sub-heading {
     font-size: 24px;
   }
+
+  .sub-heading2 {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -233,6 +263,23 @@ td {
 @media only screen and (max-width: 576px) {
   .table .th-logo {
     width: 80px;
+  }
+
+  .recipe-section {
+    text-align: center;
+  }
+
+  .recipe-section > div {
+    padding-inline: 34px;
+  }
+
+  .recipe-section > div:first-child {
+    padding-inline: 0px;
+  }
+
+  .soap-uses {
+    width: 140px;
+    height: 140px;
   }
 }
 
